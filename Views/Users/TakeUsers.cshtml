@@ -1,0 +1,12 @@
+﻿
+@model IEnumerable<UserInfo>
+
+<h3>Пользователи</h3>
+
+<ul>
+    @if (Model != null)
+        foreach (UserInfo usersList in Model)
+        {
+            <li><h5>@usersList.LastName  @usersList.FirstName  @usersList.MiddleName  @usersList.BirthDate  @usersList.Sex  @usersList.InformationAboutYourself</h5></li>
+        }
+</ul>

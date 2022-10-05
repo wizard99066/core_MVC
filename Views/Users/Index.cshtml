@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Регистрация";
+}
+
+<script>
+if (@Model != null)
+    alert(@Model)
+</script>
+
+<div>
+    <form method="post">
+    <p>
+        <label>Фамилия:</label><br />
+        <input style="min-width: 400px" type="text" name="LastName" />
+    </p>
+    <p>
+        <label>Имя:</label><br />
+        <input style="min-width: 400px" type="text" name="FirstName" />
+    </p>
+    <p>
+        <label>Отчество:</label><br />
+        <input style="min-width: 400px" type="text" name="MiddleName" />
+    </p>
+    <p>
+        <label>Пол:</label><br />
+        <input name="Sex" type="radio" value=0 />
+        <span>Мужской</span> <br />
+        <input name="Sex" type="radio" value=1 />
+        <span>Женский</span> <br />
+    </p>
+ 
+    <p>
+        <label>Дата рождения:</label><br />
+        <input type="date" name="BirthDate" />
+    </p>
+ 
+    <p>
+        <label>О себе:</label><br />
+        <textarea style="min-width: 400px" name="Info"></textarea>
+    </p>
+ 
+    <p>
+        <input type="submit" value="Зарегистрировать" />
+    </p>
+   
+    </form>
+</div>
+
+
